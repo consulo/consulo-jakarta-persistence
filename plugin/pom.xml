@@ -51,6 +51,7 @@
                         <dependency>com.intellij.xml</dependency>
                         <dependency>com.intellij.properties</dependency>
                         <dependency>consulo.java</dependency>
+                        <dependency>consulo.sql</dependency>
                     </dependencies>
                     <packaging>
                         <skip>${dev.mode}</skip>
@@ -128,6 +129,18 @@
         <dependency>
             <groupId>${project.groupId}</groupId>
             <artifactId>com.intellij.xml</artifactId>
+            <version>${project.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>consulo.sql.language.api</artifactId>
+            <version>${project.version}</version>
+            <scope>provided</scope>
+        </dependency>
+        <dependency>
+            <groupId>${project.groupId}</groupId>
+            <artifactId>consulo.java-java.language.api</artifactId>
             <version>${project.version}</version>
             <scope>provided</scope>
         </dependency>

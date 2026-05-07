@@ -3,20 +3,22 @@
  * @since 2026-02-28
  */
 open module consulo.jakarta.persistence.api {
-    requires transitive consulo.jakarta.persistence.database.api;
+    requires consulo.jakarta.persistence.database.api;
 
-    requires transitive consulo.code.editor.api;
-    requires transitive consulo.configurable.api;
-    requires transitive consulo.execution.api;
-    requires transitive consulo.language.editor.api;
-    requires transitive consulo.language.editor.ui.api;
-    requires transitive consulo.logging.api;
-    requires transitive consulo.module.content.api;
-    requires transitive consulo.project.content.api;
+    requires consulo.sql.language.api;
 
-    requires transitive consulo.java;
-    requires transitive com.intellij.xml;
-    requires transitive com.intellij.properties;
+    requires consulo.code.editor.api;
+    requires consulo.configurable.api;
+    requires consulo.execution.api;
+    requires consulo.language.editor.api;
+    requires consulo.language.editor.ui.api;
+    requires consulo.logging.api;
+    requires consulo.module.content.api;
+    requires consulo.project.content.api;
+
+    requires consulo.java;
+    requires com.intellij.xml;
+    requires com.intellij.properties;
 
     requires gnu.trove;
 
@@ -49,5 +51,6 @@ open module consulo.jakarta.persistence.api {
     exports com.intellij.persistence.run;
     exports com.intellij.persistence.util;
     exports com.intellij.ql.psi;
+    exports consulo.jakarta.persistence;
     exports consulo.java.persistence.module.extension;
 }

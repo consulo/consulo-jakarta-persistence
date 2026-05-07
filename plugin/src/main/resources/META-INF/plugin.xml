@@ -21,6 +21,7 @@
 
     <depends>com.intellij.xml</depends>
     <depends>consulo.java</depends>
+    <depends>consulo.sql</depends>
     <depends optional="true">org.jetbrains.idea.maven</depends>
 
     <tags>
