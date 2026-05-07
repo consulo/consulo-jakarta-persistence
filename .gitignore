@@ -1,0 +1,5 @@
+out/
+/.consulo
+/dep
+target/
+plugin/sandbox
